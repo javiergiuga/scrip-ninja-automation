@@ -2,6 +2,10 @@
 # get variables form gitlab-ci or locals
 source ./scrip-ninja-automation/frontend/read_config.sh
 source ./scrip-ninja-automation/frontend/docker_getenv.sh
+source ./scrip-ninja-automation/products/read_config.sh
+source ./scrip-ninja-automation/products/docker_getenv.sh
+source ./scrip-ninja-automation/shopping-cart/read_config.sh
+source ./scrip-ninja-automation/shopping-cart/docker_getenv.sh
 
 echo "============================="
 echo "Patching docker-compose.yml"
@@ -9,7 +13,9 @@ echo "============================="
 
 sed -i -- "s/REGISTRY/$REGISTRY/g" docker-compose.yml
 sed -i -- "s/REPOSITORY/$REPOSITORY/g" docker-compose.yml
-sed -i -- "s/NAME/$NAME/g" docker-compose.yml
+sed -i -- "s/NAMES/$NAMES/g" docker-compose.yml
+sed -i -- "s/NAMEP/$NAMEP/g" docker-compose.yml
+sed -i -- "s/NAMEF/$NAMEF/g" docker-compose.yml
 sed -i -- "s/VERSION/$VERSION/g" docker-compose.yml
 
 echo "============================="
