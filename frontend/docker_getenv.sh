@@ -33,9 +33,9 @@ then
       REGISTRY="javiergiuga"
 fi
 # check NAME CONTAINER
-if [ -z "$NAME" ]
+if [ -z "$NAMEF" ]
 then
-      NAME="ms-front-$BRANCH_NAME"
+      NAMEF="ms-front-$BRANCH_NAME"
 fi
 
 # check git user
