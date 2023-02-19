@@ -8,6 +8,6 @@ docker build $1 $2 \
         --build-arg BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"` \
         --build-arg GIT_USER="$GIT_USER" \
         --build-arg GIT_USER_EMAIL="$GIT_USER_EMAIL"  \
-        -t $REGISTRY/$NAME:$VERSION products/. || exit 1
+        -t $REGISTRY/$NAMEP:$VERSION products/. || exit 1
 
 # docker build $1 $2 -t $REGISTRY/$REPOSITORY:$VERSION . || exit 1        
