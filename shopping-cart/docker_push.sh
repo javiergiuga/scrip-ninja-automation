@@ -3,8 +3,8 @@
 ##############################
 ## Get Environment Variables #
 ##############################
-source ./automation/docker_getenv.sh
-source ./automation/read_config.sh
+source ./scrip-ninja-automation/shopping-cart/docker_getenv.sh
+source ./scrip-ninja-automation/shopping-cart/read_config.sh
 
 #####################
 ## Docker get login #

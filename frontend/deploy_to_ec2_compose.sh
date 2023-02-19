@@ -1,7 +1,7 @@
 #!/bin/bash
 # get variables form gitlab-ci or locals
-source ./automation/read_config.sh
-source ./automation/docker_getenv.sh
+source ./scrip-ninja-automation/frontend/read_config.sh
+source ./scrip-ninja-automation/frontend/docker_getenv.sh
 
 echo "============================="
 echo "Patching docker-compose.yml"

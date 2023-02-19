@@ -1,7 +1,7 @@
 #!/bin/bash
 # get variables form gitlab-ci or locals
-source ./automation/read_config.sh
-source ./automation/docker_getenv.sh
+source ./scrip-ninja-automation/shopping-cart/read_config.sh
+source ./scrip-ninja-automation/shopping-cart/docker_getenv.sh
 
 docker build $1 $2 \
         --build-arg VCS_REF=`git rev-parse --short HEAD` \
