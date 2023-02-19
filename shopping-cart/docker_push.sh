@@ -14,5 +14,5 @@ docker login --username=$DOCKER_HUB_LOGIN_USR --password=$DOCKER_HUB_LOGIN_PSW
 ###############################################
 ## Pushing the image to repository on Dockerhub #
 ###############################################
-docker push $REGISTRY/$NAME:$VERSION || exit 1
+docker push $REGISTRY/$NAMES:$VERSION || exit 1
 set +x	
